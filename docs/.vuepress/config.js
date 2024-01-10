@@ -26,6 +26,7 @@ module.exports = {
           sidebarDepth: 0,
           children: [
             '/components/Button.md',
+            '/components/Link.md'
           ],
         },
       ],

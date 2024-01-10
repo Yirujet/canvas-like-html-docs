@@ -8,7 +8,7 @@
 
 ### 使用
 
-> 创建button.canvas文件，编写文件内容
+> 创建.canvas文件，编写文件内容
 
 ```canvas
 <canvas width="800" height="180">
@@ -35,7 +35,6 @@
 ```
 
 ### 禁用状态
-
 
 <ClientOnly>
 <vp-button-disabled></vp-button-disabled>
@@ -81,7 +80,7 @@
 </canvas>
 ```
 
-### 按钮事件
+### 事件
 
 > 支持监听click事件
 
@@ -91,7 +90,7 @@
 
 ```
 <canvas width="800" height="60">
-    <button x="10" y="10" type="primary" @mouseup="handleClick">click按钮</button>
+    <button x="10" y="10" type="primary" @click="handleClick">click按钮</button>
 </canvas>
 
 <script>
@@ -107,15 +106,15 @@
 
 ### 组件参数
 
-| 参数     | 说明         | 类型             | 可选值                                                                         | 默认值                                     |
-| :------- | ------------ | ---------------- | ------------------------------------------------------------------------------ | ------------------------------------------ |
-| text     | 按钮文字     | string           |                                                                                | 按钮                                       |
-| color    | 按钮文字颜色 | string           |                                                                                | canvas绘制上下文对象默认设置的字体填充颜色 |
-| fontSize | 按钮文字大小 | string\| number |                                                                                | canvas绘制上下文对象默认设置的字体大小     |
-| type     | 按钮类型     | string           | default \| primary \| success \| info \| warning \| danger \| text | default                                    |
-| plain    | 是否朴素按钮 | boolean          |                                                                                | false                                      |
-| round    | 是否圆角按钮 | boolean          |                                                                                | false                                      |
-| disabled | 是否禁用     | boolean          |                                                                                | false                                      |
+| 参数     | 说明         | 类型             | 可选值                                                                       | 默认值                                     |
+| :------- | ------------ | ---------------- | ---------------------------------------------------------------------------- | ------------------------------------------ |
+| text     | 按钮文字     | string           |                                                                              | 按钮                                       |
+| color    | 按钮文字颜色 | string           |                                                                              | canvas绘制上下文对象默认设置的字体填充颜色 |
+| fontSize | 按钮文字大小 | string\| number |                                                                              | canvas绘制上下文对象默认设置的字体大小     |
+| type     | 类型         | string           | default\| primary \| success \| info \| warning \| danger \| text | default                                    |
+| plain    | 是否朴素按钮 | boolean          |                                                                              | false                                      |
+| round    | 是否圆角按钮 | boolean          |                                                                              | false                                      |
+| disabled | 是否禁用     | boolean          |                                                                              | false                                      |
 
 ### 组件事件
 
