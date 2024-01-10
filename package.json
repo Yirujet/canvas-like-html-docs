@@ -1,0 +1,19 @@
+{
+  "name": "canvas-like-html-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "author": "yirujet",
+  "license": "ISC",
+  "devDependencies": {
+    "vuepress": "^1.9.10"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "5.6.0",
+    "webpack": "5.89.0"
+  }
+}
