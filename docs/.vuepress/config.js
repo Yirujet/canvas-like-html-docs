@@ -29,6 +29,14 @@ module.exports = {
             '/components/Link.md'
           ],
         },
+        {
+          title: '布局组件',
+          collapsable: false,
+          sidebarDepth: 0,
+          children: [
+            '/components/Grid.md',
+          ]
+        }
       ],
     },
 }
