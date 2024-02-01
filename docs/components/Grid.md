@@ -30,9 +30,9 @@
 </canvas>
 ```
 
-垂直对齐方式
+### 垂直对齐方式
 
-> 通过设置row元素的align属性，可垂直对齐row下的所有列元素
+> 通过设置row元素的`align`属性，可对该行元素下的所有列元素进行垂直方向的对齐
 
 <ClientOnly>
 <vp-grid-align></vp-grid-align>
@@ -68,6 +68,83 @@
 			<row align="bottom">
 				<col :span="12"><button>col-12</button></col>
 				<col :span="12"><button>col-12</button></col>
+			</row>
+		</col>
+	</row>
+</canvas>
+```
+
+### 水平排列方式
+
+> 通过设置row元素的`justify`属性，可对该行元素下的所有列元素进行水平方向的排列
+
+<ClientOnly>
+<vp-grid-justify></vp-grid-justify>
+</ClientOnly>
+
+```canvas
+<canvas width="800" height="350">
+	<row>
+		<col :span="24">
+			<row>
+				<col :span="24">
+					<span>justify: start</span>
+				</col>
+			</row>
+			<row justify="start">
+				<col :span="2"><button type="primary">col-2</button></col>
+				<col :span="2"><button type="primary">col-2</button></col>
+				<col :span="2"><button type="primary">col-2</button></col>
+			</row>
+			<row>
+				<col :span="24">
+					<span>justify: start</span>
+				</col>
+			</row>
+			<row justify="start">
+				<col :span="2"><button type="primary">col-2</button></col>
+				<col :span="2"><button type="primary">col-2</button></col>
+				<col :span="2"><button type="primary">col-2</button></col>
+			</row>
+			<row>
+				<col :span="24">
+					<span>justify: start</span>
+				</col>
+			</row>
+			<row justify="start">
+				<col :span="2"><button type="primary">col-2</button></col>
+				<col :span="2"><button type="primary">col-2</button></col>
+				<col :span="2"><button type="primary">col-2</button></col>
+			</row>
+			<row>
+				<col :span="24">
+					<span>justify: start</span>
+				</col>
+			</row>
+			<row justify="start">
+				<col :span="2"><button type="primary">col-2</button></col>
+				<col :span="2"><button type="primary">col-2</button></col>
+				<col :span="2"><button type="primary">col-2</button></col>
+			</row>
+			<row>
+				<col :span="24">
+					<span>justify: start</span>
+				</col>
+			</row>
+			<row justify="start">
+				<col :span="2"><button type="primary">col-2</button></col>
+				<col :span="2"><button type="primary">col-2</button></col>
+				<col :span="2"><button type="primary">col-2</button></col>
+			</row>
+			<row>
+				<col :span="24">
+					<span>justify: start</span>
+				</col>
+			</row>
+			<row justify="start">
+				<col :span="2"><button type="primary">col-2</button></col>
+				<col :span="2"><button type="primary">col-2</button></col>
+				<col :span="2"><button type="primary">col-2</button></col>
 			</row>
 		</col>
 	</row>
