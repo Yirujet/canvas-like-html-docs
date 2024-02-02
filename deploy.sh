@@ -12,8 +12,8 @@ npm run docs:build
 cd docs/.vuepress/dist
 
 git init
-git add -A
+git add .
 git commit -m 'deploy'
-git push -f https://github.com/Yirujet/canvas-like-html-docs.git main
+git push git@github.com:Yirujet/canvas-like-html-docs.git master
 
 cd -
