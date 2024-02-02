@@ -1,6 +1,7 @@
 module.exports = {
     title: 'Canvas like html',
     description: 'Make canvas drawing as convenient as using html elements',
+    base: '/canvas-like-html-docs/',
     markdown: {
       lineNumbers: false,
     },
