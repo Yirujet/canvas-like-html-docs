@@ -10,9 +10,9 @@
   "author": "yirujet",
   "license": "ISC",
   "devDependencies": {
-    "vuepress": "^1.9.10"
   },
   "dependencies": {
-    "webpack": "^4.42.0"
+    "webpack": "^4.42.0",
+    "vuepress": "^1.9.10"
   }
 }
