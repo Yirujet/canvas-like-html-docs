@@ -104,19 +104,19 @@
 </script>
 ```
 
-### 组件参数
+### 元素参数
 
-| 参数     | 说明         | 类型             | 可选值                                                                       | 默认值                                     |
-| :------- | ------------ | ---------------- | ---------------------------------------------------------------------------- | ------------------------------------------ |
-| text     | 按钮文字     | string           |                                                                              | 按钮                                       |
-| color    | 按钮文字颜色 | string           |                                                                              | canvas绘制上下文对象默认设置的字体填充颜色 |
-| fontSize | 按钮文字大小 | string\| number |                                                                              | canvas绘制上下文对象默认设置的字体大小     |
-| type     | 类型         | string           | default\| primary \| success \| info \| warning \| danger \| text | default                                    |
-| plain    | 是否朴素按钮 | boolean          |                                                                              | false                                      |
-| round    | 是否圆角按钮 | boolean          |                                                                              | false                                      |
-| disabled | 是否禁用     | boolean          |                                                                              | false                                      |
+| 参数     | 说明         | 类型             | 可选值                                                                         | 默认值                                     |
+| :------- | ------------ | ---------------- | ------------------------------------------------------------------------------ | ------------------------------------------ |
+| text     | 按钮文字     | string           |                                                                                | 按钮                                       |
+| color    | 按钮文字颜色 | string           |                                                                                | canvas绘制上下文对象默认设置的字体填充颜色 |
+| fontSize | 按钮文字大小 | string\| number |                                                                                | canvas绘制上下文对象默认设置的字体大小     |
+| type     | 类型         | string           | default \| primary \| success \| info \| warning \| danger \| text | default                                    |
+| plain    | 是否朴素按钮 | boolean          |                                                                                | false                                      |
+| round    | 是否圆角按钮 | boolean          |                                                                                | false                                      |
+| disabled | 是否禁用     | boolean          |                                                                                | false                                      |
 
-### 组件事件
+### 元素事件
 
 | 事件名称 | 说明               | 回调参数 |
 | -------- | ------------------ | -------- |

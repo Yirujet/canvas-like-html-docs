@@ -8,6 +8,13 @@ module.exports = {
       [
         'script',
         { src: '/index.js' }
+      ],
+      [
+        'link',
+        {
+          rel: 'stylesheet',
+          href: '/index.css' 
+        }
       ]
     ],
     themeConfig: {
@@ -15,26 +22,39 @@ module.exports = {
       subSidebar: 'auto',
       sidebar: [
         {
-          title: '使用指南', // 必要的
-          collapsable: false, // 可选的, 默认值是 true,
-          sidebarDepth: 0, // 可选的, 默认值是 1
-          children: ['/guide/install.md', '/guide/use.md'],
-        },
-        {
-          title: '绘图组件',
+          title: '使用指南',
           collapsable: false,
           sidebarDepth: 0,
           children: [
+            '/guide/install.md',
+            '/guide/use.md',
+            '/guide/canvas_sfc.md'
+          ],
+        },
+        {
+          title: '绘图元素',
+          collapsable: false,
+          sidebarDepth: 0,
+          children: [
+            '/components/Span.md',
             '/components/Button.md',
             '/components/Link.md'
           ],
         },
         {
-          title: '布局组件',
+          title: '布局元素',
           collapsable: false,
           sidebarDepth: 0,
           children: [
             '/components/Grid.md',
+          ]
+        },
+        {
+          title: '内置指令',
+          collapsable: false,
+          sidebarDepth: 0,
+          children: [
+            '/directives/for.md',
           ]
         }
       ],
