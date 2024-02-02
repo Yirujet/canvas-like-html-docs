@@ -39,7 +39,8 @@ module.exports = {
           children: [
             '/components/Span.md',
             '/components/Button.md',
-            '/components/Link.md'
+            '/components/Link.md',
+            '/components/Tag.md'
           ],
         },
         {
