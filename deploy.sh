@@ -14,7 +14,6 @@ cd docs/.vuepress/dist
 git init
 git add .
 git commit -m 'deploy'
-git pull git@github.com:Yirujet/canvas-like-html-docs.git master --allow-unrelated-histories
-git push git@github.com:Yirujet/canvas-like-html-docs.git master
+git push git@github.com:Yirujet/canvas-like-html-docs.git master --force
 
 cd -
