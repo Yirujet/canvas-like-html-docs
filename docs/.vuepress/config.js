@@ -40,7 +40,11 @@ module.exports = {
             '/components/Span.md',
             '/components/Button.md',
             '/components/Link.md',
-            '/components/Tag.md'
+            '/components/Tag.md',
+            '/components/Checkbox.md',
+            '/components/Radio.md',
+            '/components/Progress.md',
+            '/components/Switch.md',
           ],
         },
         {
