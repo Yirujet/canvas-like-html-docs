@@ -45,6 +45,7 @@ module.exports = {
             '/components/Radio.md',
             '/components/Progress.md',
             '/components/Switch.md',
+            '/components/Table.md'
           ],
         },
         {
