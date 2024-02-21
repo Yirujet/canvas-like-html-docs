@@ -62,6 +62,16 @@ module.exports = {
           sidebarDepth: 0,
           children: [
             '/directives/for.md',
+            '/directives/insertVal.md'
+          ]
+        },
+        {
+          title: '其他',
+          collapsable: false,
+          sidebarDepth: 0,
+          children: [
+            '/other/Element.md',
+            '/other/CustomElement.md'
           ]
         }
       ],

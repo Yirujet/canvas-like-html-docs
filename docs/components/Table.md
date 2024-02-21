@@ -2,7 +2,7 @@
 
 ### 基础表格
 
-> 给`table`元素传入`columns`、`data`属性即可在画布自动绘制出相应表格
+> 给 `table`元素传入 `columns`、`data`属性即可在画布自动绘制出相应表格
 
 <ClientOnly>
 <vp-table></vp-table>
@@ -478,3 +478,29 @@ export default {
 </script>
 
 ```
+
+### 元素参数
+
+#### table
+
+| 参数    | 说明       | 类型  | 可选值 | 默认值 |
+| ------- | ---------- | ----- | ------ | ------ |
+| columns | 表格列配置 | Array |        | []     |
+| data    | 表格数据   | Array |        | []     |
+
+#### col
+
+| 参数     | 说明           | 类型         | 可选值        | 默认值 |
+| -------- | -------------- | ------------ | ------------- | ------ |
+| label    | 表头列显示文字 | string       |               |        |
+| field    | 列绑定字段     | string       |               |        |
+| width    | 列宽           | number       |               |        |
+| fixed    | 固定列         | string       | left\| right |        |
+| type     | 列显示类型     | string       | checkbox      |        |
+| children | 树形表头列配置 | Array\<col\> |               |        |
+
+### 元素事件
+
+| 事件名称         | 说明                     | 回调参数  |
+| ---------------- | ------------------------ | --------- |
+| selection-change | 勾选表格数据时触发的事件 | selection |
