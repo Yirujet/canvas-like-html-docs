@@ -65,7 +65,7 @@
                {
                    test: /\.canvas$/,
                    use: [
-                       'canvas-loader'
+                       'canvas-loaders'
                    ]
                }
            ]
@@ -73,7 +73,6 @@
    }
 
    ```
-
    test.canvas
 
    ```canvas
