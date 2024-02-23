@@ -46,6 +46,7 @@ module.exports = {
             '/components/Progress.md',
             '/components/Switch.md',
             '/components/Dropdown.md',
+            '/components/Input.md',
             '/components/Table.md'
           ],
         },

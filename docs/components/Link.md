@@ -82,13 +82,13 @@
 
 ### 元素参数
 
-| 参数     | 说明           | 类型             | 可选值                                                                         | 默认值                                 |
-| :------- | -------------- | ---------------- | ------------------------------------------------------------------------------ | -------------------------------------- |
-| text     | 链接文字       | string           |                                                                                | 按钮                                   |
-| fontSize | 链接文字大小   | string\| number |                                                                                | canvas绘制上下文对象默认设置的字体大小 |
-| type     | 类型           | string           | default \| primary \| success \| info \| warning \| danger \| text | default                                |
-| href     | 原生 href 属性 | string           |                                                                                |                                        |
-| disabled | 是否禁用       | boolean          |                                                                                | false                                  |
+| 参数     | 说明           | 类型             | 可选值                                                                       | 默认值                                 |
+| :------- | -------------- | ---------------- | ---------------------------------------------------------------------------- | -------------------------------------- |
+| text     | 链接文字       | string           |                                                                              | 按钮                                   |
+| fontSize | 链接文字大小   | string\| number |                                                                              | canvas绘制上下文对象默认设置的字体大小 |
+| type     | 类型           | string           | default\| primary \| success \| info \| warning \| danger \| text | default                                |
+| href     | 原生 href 属性 | string           |                                                                              |                                        |
+| disabled | 是否禁用       | boolean          |                                                                              | false                                  |
 
 ### 元素事件
 
