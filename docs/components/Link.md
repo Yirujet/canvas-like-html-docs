@@ -1,14 +1,10 @@
 ## Link
 
-### 基础链接
+### Basic link
 
 <ClientOnly>
 <vp-link></vp-link>
 </ClientOnly>
-
-### 使用
-
-> 创建.canvas文件，编写文件内容
 
 ```canvas
 <canvas width="800" height="50">
@@ -22,13 +18,13 @@
 
 ```
 
-### 禁用状态
+### Disabled
 
 <ClientOnly>
 <vp-link-disabled></vp-link-disabled>
 </ClientOnly>
 
-> 给链接元素传入disabled属性来控制其是否可用
+> Pass the disabled attribute to the link element to control whether it is available
 
 ```
 <canvas width="800" height="50">
@@ -41,9 +37,9 @@
 </canvas>
 ```
 
-### 下划线
+### Underline
 
-> 给链接元素传入underline属性来控制其是否显示下划线
+> Pass the underline attribute to the link element to control whether it displays underline
 
 <ClientOnly>
 <vp-underline-link></vp-underline-link>
@@ -56,9 +52,9 @@
 </canvas>
 ```
 
-### 事件
+### Event
 
-> 支持监听click事件
+> Support click events
 
 <ClientOnly>
 <vp-link-event></vp-link-event>
@@ -80,18 +76,18 @@
 </script>
 ```
 
-### 元素参数
+### Attributes
 
-| 参数     | 说明           | 类型             | 可选值                                                                       | 默认值                                 |
-| :------- | -------------- | ---------------- | ---------------------------------------------------------------------------- | -------------------------------------- |
-| text     | 链接文字       | string           |                                                                              | 按钮                                   |
-| fontSize | 链接文字大小   | string\| number |                                                                              | canvas绘制上下文对象默认设置的字体大小 |
-| type     | 类型           | string           | default\| primary \| success \| info \| warning \| danger \| text | default                                |
-| href     | 原生 href 属性 | string           |                                                                              |                                        |
-| disabled | 是否禁用       | boolean          |                                                                              | false                                  |
+| Attribute | Description           | Type             | Accepted values                                                              | Default                                                            |
+| :-------- | --------------------- | ---------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| text      | link text             | string           |                                                                              | 按钮                                                               |
+| fontSize  | link text fontsize    | string\| number |                                                                              | The font size set by default for the canvas drawing context object |
+| type      | link type             | string           | default\| primary \| success \| info \| warning \| danger \| text | default                                                            |
+| href      | Native href attribute | string           |                                                                              |                                                                    |
+| disabled  | Whether to disable    | boolean          |                                                                              | false                                                              |
 
-### 元素事件
+### Events
 
-| 事件名称 | 说明               | 回调参数 |
-| -------- | ------------------ | -------- |
-| click    | 点击链接触发的事件 |          |
+| Event Name | Description                   | Parameters |
+| ---------- | ----------------------------- | ---------- |
+| click      | Event triggered by link click |            |

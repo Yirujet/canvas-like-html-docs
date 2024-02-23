@@ -1,10 +1,10 @@
-## Custom drawing elements
+## 自定义绘图元素
 
-When the built-in drawing elements cannot meet the drawing needs, you can register custom drawing elements for reuse.
+当内置的绘图元素不能满足绘图需求时，可以注册自定义绘图元素以达到复用。
 
-Take the Vue project as an example:
+以Vue项目为例：
 
-> After registering a custom element through the element method of CanvasLikeHtml, you can use this custom element in the .canvas file
+> 通过CanvasLikeHtml的element方法注册自定义元素后，即可在.canvas文件中使用此自定义元素
 
 <ClientOnly>
 <vp-custom-element></vp-custom-element>

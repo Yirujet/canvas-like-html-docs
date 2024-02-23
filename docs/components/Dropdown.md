@@ -1,6 +1,6 @@
 ## Dropdown
 
-### 基础用法
+### Basic dropdown
 
 <ClientOnly>
 <vp-dropdown></vp-dropdown>
@@ -23,9 +23,9 @@ export default {
 </script>
 ```
 
-### 触发方式
+### Trigger mode
 
-> 通过传入 `trigger`来设置菜单的触发方式
+> Set the triggering method of the menu by passing in `trigger`
 
 <ClientOnly>
 <vp-dropdown-trigger></vp-dropdown-trigger>
@@ -49,9 +49,9 @@ export default {
 </script>
 ```
 
-### 菜单隐藏方式
+### Menu hiding method
 
-> 通过传入 `hideOnClick`来设置菜单项点击后菜单的隐藏方式
+> Pass in `hideOnClick` to set how the menu is hidden after the menu item is clicked.
 
 <ClientOnly>
 <vp-dropdown-hide-on-click></vp-dropdown-hide-on-click>
@@ -75,20 +75,20 @@ export default {
 
 ```
 
-### 元素参数
+### Attributes
 
-| 参数        | 说明                     | 类型             | 可选值         | 默认值                                 |
-| ----------- | ------------------------ | ---------------- | -------------- | -------------------------------------- |
-| text        | 菜单说明文字             | string           |                | 下拉菜单                               |
-| fontSize    | 菜单说明文字大小         | string\| number |                | canvas绘制上下文对象默认设置的字体大小 |
-| trigger     | 触发方式                 | string           | hover\| click | hover                                  |
-| list        | 菜单列表                 | array            |                | []                                     |
-| labelName   | 菜单项name对应的key      | string           |                | name                                   |
-| valueName   | 菜单项value对应的key     | string           |                | value                                  |
-| hideOnClick | 选择菜单项后是否隐藏菜单 | boolean          |                | true                                   |
+| Attribute   | Description                                          | Type             | Accepted values | Default                                                            |
+| ----------- | ---------------------------------------------------- | ---------------- | --------------- | ------------------------------------------------------------------ |
+| text        | description text                                     | string           |                 | 下拉菜单                                                           |
+| fontSize    | description text fontsize                            | string\| number |                 | The font size set by default for the canvas drawing context object |
+| trigger     | Trigger mode                                         | string           | hover\| click  | hover                                                              |
+| list        | Menu list                                            | array            |                 | []                                                                 |
+| labelName   | The key corresponding to the menu item name          | string           |                 | name                                                               |
+| valueName   | The key corresponding to the menu item value         | string           |                 | value                                                              |
+| hideOnClick | Whether to hide the menu after selecting a menu item | boolean          |                 | true                                                               |
 
-### 元素事件
+### Events
 
-| 事件名称 | 说明                   | 回调参数        |
-| -------- | ---------------------- | --------------- |
-| command  | 选择菜单项后触发的事件 | (value) => void |
+| Event Name | Description                               | Parameters |
+| ---------- | ----------------------------------------- | ---------- |
+| command    | Event triggered after selecting menu item | (value)    |

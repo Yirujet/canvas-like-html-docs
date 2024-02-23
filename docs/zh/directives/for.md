@@ -1,9 +1,9 @@
 ## *for
 
-* Currently only supports receiving array (Array) type data as its loop source
-* Usage：
-  Loops through rendering element nodes based on the given source data.
-  for example:
+* 目前仅支持接收数组(Array)类型的数据作为其循环来源
+* 用法：
+  基于给定的源数据循环渲染元素节点。
+  举个例子：
 
   ```canvas
   <canvas>

@@ -1,8 +1,8 @@
-## Get started quickly
+## 快速上手
 
-This section will introduce how to use canvas-like-html in your project.
+本节将介绍如何在项目中使用canvas-like-html。
 
-### Import canvas-like-html
+### 引入canvas-like-html
 
 > npm
 
@@ -10,9 +10,9 @@ This section will introduce how to use canvas-like-html in your project.
 npm i canvas-like-html -S
 ```
 
-### Usage
+### 使用方式
 
-1. Use js to create drawing elements, similar to vue's render writing method
+1. 使用js创建绘制元素，类似于vue的render写法
 
    ```js
    import CanvasLikeHtml from 'canvas-like-html'
@@ -58,7 +58,7 @@ npm i canvas-like-html -S
        }).mount(document.getElementById('canvas'))
    }
    ```
-2. Using SFC (`.canvas` file, recommended method!!!), canvas-like-html supports compiling `.canvas` files and rendering the compiled results onto the canvas element. (Note: You need to install the `canvas-loaders` module and introduce `canvas-loaders` in the webpack loader to process .canvas files)
+2. 使用SFC（`.canvas`文件，推荐方式！！！），canvas-like-html支持编译 `.canvas`文件，并将其编译结果渲染到canvas元素上。(注：需安装 `canvas-loaders`模块并在webpack loader中引入 `canvas-loaders`用于处理.canvas文件)
 
    webpack.config.js
 

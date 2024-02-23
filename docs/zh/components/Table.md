@@ -1,8 +1,8 @@
 ## Table
 
-### Basic table
+### 基础表格
 
-> Pass in the `columns` and `data` attributes to the `table` element to automatically draw the corresponding table on the canvas.
+> 给 `table`元素传入 `columns`、`data`属性即可在画布自动绘制出相应表格
 
 <ClientOnly>
 <vp-table></vp-table>
@@ -41,9 +41,9 @@ export default {
 </script>
 ```
 
-### Fixed
+### 固定列
 
-> Pass the `fixed` attribute to the column to fix the column
+> 给列传入 `fixed`属性即可将该列固定
 
 <ClientOnly>
 <vp-table-fixed></vp-table-fixed>
@@ -93,9 +93,9 @@ export default {
 
 ```
 
-### Selection
+### 选择列
 
-> Passing the `type` attribute with the value `checkbox` to the column will turn the column into a selection column
+> 给列传入值为 `checkbox`的 `type`属性即将该列变为一个选择列
 
 <ClientOnly>
 <vp-table-selection></vp-table-selection>
@@ -149,9 +149,9 @@ export default {
 </script>
 ```
 
-### Tree table header
+### 树形表头
 
-> Pass the `children` attribute to the column to add sub-columns to the column
+> 给列传入 `children`属性即可为该列添加子列
 
 <ClientOnly>
 <vp-table-children></vp-table-children>
@@ -246,9 +246,9 @@ export default {
 
 ```
 
-### Custom table header
+### 自定义表头列
 
-> Setting the `head` in the `slot` attribute of the column can realize the function of customizing the header column.
+> 设置列的 `slot`属性中的 `head`可实现自定义表头列的功能
 
 <ClientOnly>
 <vp-table-slot-head></vp-table-slot-head>
@@ -312,9 +312,9 @@ export default {
 
 ```
 
-### Custom table cell
+### 自定义内容列
 
-> Setting the `body` in the `slot` attribute of the column can implement the function of customizing the content column
+> 设置列的 `slot`属性中的 `body`可实现自定义内容列的功能
 
 <ClientOnly>
 <vp-table-slot-body></vp-table-slot-body>
@@ -437,9 +437,9 @@ export default {
 
 ```
 
-### Large data volume rendering
+### 大数据量渲染
 
-> The table element was developed to solve the problem of stuck rendering of large data tables in DOM, and can display millions of data stably and smoothly.
+> table元素就是为解决dom中大数据表格渲染卡顿的问题而开发，能够稳定并流畅展示百万级数据
 
 <ClientOnly>
 <vp-table-big-data></vp-table-big-data>
@@ -479,28 +479,28 @@ export default {
 
 ```
 
-### Attributes
+### 元素参数
 
 #### table
 
-| Attribute | Description                | Type  | Accepted values | Default |
-| --------- | -------------------------- | ----- | --------------- | ------- |
-| columns   | table column configuration | Array |                 | []      |
-| data      | table data                 | Array |                 | []      |
+| 参数    | 说明       | 类型  | 可选值 | 默认值 |
+| ------- | ---------- | ----- | ------ | ------ |
+| columns | 表格列配置 | Array |        | []     |
+| data    | 表格数据   | Array |        | []     |
 
 #### col
 
-| Attribute | Description                            | Type         | Accepted values | Default |
-| --------- | -------------------------------------- | ------------ | --------------- | ------- |
-| label     | header column display text             | string       |                 |         |
-| field     | column bound fields                    | string       |                 |         |
-| width     | column width                           | number       |                 |         |
-| fixed     | fixed columns                          | string       | left\| right   |         |
-| type      | column display type                    | string       | checkbox        |         |
-| children  | tree table header column configuration | Array\<col\> |                 |         |
+| 参数     | 说明           | 类型         | 可选值        | 默认值 |
+| -------- | -------------- | ------------ | ------------- | ------ |
+| label    | 表头列显示文字 | string       |               |        |
+| field    | 列绑定字段     | string       |               |        |
+| width    | 列宽           | number       |               |        |
+| fixed    | 固定列         | string       | left\| right |        |
+| type     | 列显示类型     | string       | checkbox      |        |
+| children | 树形表头列配置 | Array\<col\> |               |        |
 
-### Events
+### 元素事件
 
-| Event Name       | Description                                | Parameters |
-| ---------------- | ------------------------------------------ | ---------- |
-| selection-change | Event triggered when table data is checked | selection  |
+| 事件名称         | 说明                     | 回调参数  |
+| ---------------- | ------------------------ | --------- |
+| selection-change | 勾选表格数据时触发的事件 | selection |

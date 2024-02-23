@@ -1,8 +1,8 @@
 ## Progress
 
-### linear progress bar
+### 线形进度条
 
-> Setting `percentage` to the progress element is the progress value of the progress bar element, ranging from 0-100.
+> 给progress元素设置`percentage`即为进度条元素的进度值，范围为0-100。
 
 <ClientOnly>
 <vp-progress></vp-progress>
@@ -37,9 +37,9 @@
 </canvas>
 ```
 
-### Percent internal display
+### 百分比内显
 
-> Set the `textInside` attribute to the progress bar element to move the displayed text inside the progress bar.
+> 给进度条元素设置 `textInside`属性即将显示文字移至进度条内部
 
 <ClientOnly>
 <vp-progress-text-inside></vp-progress-text-inside>
@@ -75,9 +75,9 @@
 
 ```
 
-### Custom color
+### 自定义颜色
 
-> Set the color attribute of the progress bar element to customize the color display of the progress bar at different progress values.
+> 设置进度条元素的color属性，可以自定义进度条在不同进度值时的颜色显示
 
 <ClientOnly>
 <vp-progress-color></vp-progress-color>
@@ -112,9 +112,9 @@ export default {
 </script>
 ```
 
-### Circular progress bar
+### 环形进度条
 
-> Set `type`="`circle`" to the progress bar element to turn it into a circular progress bar
+> 给进度条元素设置 `type`="`circle`"使其变为一个环形进度条
 
 <ClientOnly>
 <vp-progress-circle></vp-progress-circle>
@@ -134,9 +134,9 @@ export default {
 </canvas>
 ```
 
-### Dashboard progress bar
+### 仪表盘进度条
 
-> Set `type`="`dashboard`" to the progress bar element to turn it into a circular progress bar
+> 给进度条元素设置 `type`="`dashboard`"使其变为一个环形进度条
 
 <ClientOnly>
 <vp-progress-dashboard></vp-progress-dashboard>
@@ -156,16 +156,16 @@ export default {
 </canvas>
 ```
 
-### Attributes
+### 元素参数
 
-| Attribute     | Description                                         | Type          | Accepted values                   | Default |
-| ------------- | --------------------------------------------------- | ------------- | --------------------------------- | ------- |
-| percentage    | progress bar value                                  | number        | 0-100                             | 0       |
-| type          | Progress bar type                                   | string        | line\| circle \| dashboard     | line    |
-| strokeWidth   | progress bar line width                             | number        |                                   | 6       |
-| textInside    | The progress bar shows whether the text is embedded | boolean       |                                   | false   |
-| status        | progress bar status                                 | string        | success\| exception \| warning |         |
-| color         | Customize progress bar color                        | string\|Array |                                   |         |
-| width         | progress bar width                                  | number        |                                   | 126     |
-| showText      | Whether to display progress bar text                | boolean       |                                   | true    |
-| strokeLinecap | Progress bar line end type                          | string        | butt\| round \| square         | round   |
+| 参数          | 说明                   | 类型          | 可选值                            | 默认值 |
+| ------------- | ---------------------- | ------------- | --------------------------------- | ------ |
+| percentage    | 进度条值               | number        | 0-100                             | 0      |
+| type          | 进度条显示类型         | string        | line\| circle \| dashboard     | line   |
+| strokeWidth   | 进度条线条宽度         | number        |                                   | 6      |
+| textInside    | 进度条显示文字是否内嵌 | boolean       |                                   | false  |
+| status        | 进度条状态             | string        | success\| exception \| warning |        |
+| color         | 自定义进度条颜色       | string\|Array |                                   |        |
+| width         | 进度条宽度             | number        |                                   | 126    |
+| showText      | 是否显示进度条文字     | boolean       |                                   | true   |
+| strokeLinecap | 进度条线端类型         | string        | butt \| round \| square       | round  |

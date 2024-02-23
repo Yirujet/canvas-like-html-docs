@@ -1,9 +1,9 @@
-## interpolation expression
+## 插值表达式
 
-* Interpolation expressions are wrapped in double brackets `{{}}`
-* Usage：
-  Insert dynamic data into specified text
-  for example:
+* 插值表达式以双括号`{{}}`包裹
+* 用法：
+  将动态数据插入到指定文本
+  举个例子：
 
   ```canvas
   <canvas>

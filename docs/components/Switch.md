@@ -1,6 +1,6 @@
 ## Switch
 
-### 基础用法
+### Basic switch
 
 <ClientOnly>
 <vp-switch></vp-switch>
@@ -12,9 +12,9 @@
 </canvas>
 ```
 
-### 文字描述
+### inactiveText、activeText
 
-> 给switch元素分别设置 `inactiveText`和 `activeText`属性，即可设置开关元素的提示文字
+> Set the `inactiveText` and `activeText` attributes respectively to the switch element to set the prompt text of the switch element.
 
 <ClientOnly>
 <vp-switch-text></vp-switch-text>
@@ -24,9 +24,9 @@
     <switch x="10" y="10" inactiveText="关闭" activeText="打开"></switch>
 </canvas>
 
-### 自定义开关的值
+### Custom switch value
 
-> 给switch元素分别设置 `inactiveValue`和 `activeValue`属性，即可设置开关元素的自定义value
+> Set the `inactiveValue` and `activeValue` attributes respectively to the switch element to set the custom value of the switch element.
 
 <ClientOnly>
 <vp-switch-value></vp-switch-value>
@@ -47,9 +47,9 @@ export default {
 </script>
 ```
 
-### 禁用状态
+### Disabled
 
-> 给switch元素传入 `disabled`属性控制其是否禁用
+> Pass the `disabled` attribute to the switch element to control whether it is disabled
 
 <ClientOnly>
 <vp-switch-disabled></vp-switch-disabled>
@@ -62,21 +62,21 @@ export default {
 </canvas>
 ```
 
-### 元素参数
+### Attributes
 
-| 参数          | 说明             | 类型                          | 可选值 | 默认值    |
-| ------------- | ---------------- | ----------------------------- | ------ | --------- |
-| value         | 开关值           | string\| number \| boolean |        |           |
-| disabled      | 是否禁用         | boolean                       |        | false     |
-| inactiveText  | 关闭时的文字提示 | string                        |        |           |
-| activeText    | 开启时的文字提示 | string                        |        |           |
-| inactiveValue | 关闭时的开关值   | string\| number \| boolean |        | false     |
-| activeValue   | 开启时的开关值   | string\| number \| boolean |        | true      |
-| inactiveColor | 关闭时的开关颜色 | string                        |        | '#C0CCDA' |
-| activeColor   | 开启时的开关颜色 | string                        |        | '#409EFF' |
+| Attribute     | Description                 | Type                          | Accepted values | Default   |
+| ------------- | --------------------------- | ----------------------------- | --------------- | --------- |
+| value         | switch value                | string\| number \| boolean |                 |           |
+| disabled      | Whether to disable          | boolean                       |                 | false     |
+| inactiveText  | Text prompt when closing    | string                        |                 |           |
+| activeText    | Text prompt when opening    | string                        |                 |           |
+| inactiveValue | Switch value when closed    | string\| number \| boolean |                 | false     |
+| activeValue   | Switch value when turned on | string\| number \| boolean |                 | true      |
+| inactiveColor | Switch color when closed    | string                        |                 | '#C0CCDA' |
+| activeColor   | Switch color when turned on | string                        |                 | '#409EFF' |
 
-### 元素事件
+### Events
 
-| 事件名称 | 说明                         | 回调参数        |
-| -------- | ---------------------------- | --------------- |
-| change   | 开关的值发生变化时触发的事件 | (value) => void |
+| Event Name | Description                                          | Parameters |
+| ---------- | ---------------------------------------------------- | ---------- |
+| change     | Event triggered when the value of the switch changes | (value)    |

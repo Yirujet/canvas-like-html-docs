@@ -1,8 +1,8 @@
 ## Tag
 
-### Basic tag
+### 基础用法
 
-> Use the `type` attribute to control the type of tag
+> 用`type`属性来控制标签的类型
 
 <ClientOnly>
 <vp-tag></vp-tag>
@@ -18,9 +18,9 @@
 </canvas>
 ```
 
-### Closeable tag
+### 可移除标签
 
-> Add the `closable` attribute to the label to make it a closeable tag
+> 给标签添加 `closable`属性使其变为可关闭标签
 
 <ClientOnly>
 <vp-tag-closable></vp-tag-closable>
@@ -36,9 +36,9 @@
 </canvas>
 ```
 
-### Event
+### 事件
 
-> Support click events
+> 支持监听change和close事件
 
 <ClientOnly>
 <vp-tag-event></vp-tag-event>
@@ -63,17 +63,18 @@ export default {
 </script>
 ```
 
-### Attributes
 
-| Attribute | Description                        | Type    | Accepted values                                       | Default |
-| :-------- | ---------------------------------- | ------- | ----------------------------------------------------- | ------- |
-| text      | tag text                           | string  |                                                       | 按钮    |
-| type      | tag type                           | string  | default\| success \| info \| warning \| danger | default |
-| closable  | Whether to display the delete icon | boolean |                                                       | false   |
+### 元素参数
 
-### Events
+| 参数     | 说明             | 类型    | 可选值                                                | 默认值  |
+| :------- | ---------------- | ------- | ----------------------------------------------------- | ------- |
+| text     | 标签文字         | string  |                                                       | 按钮    |
+| type     | 类型             | string  | default\| success \| info \| warning \| danger | default |
+| closable | 是否显示删除图标 | boolean |                                                       | false   |
 
-| Event Name | Description                                     | Parameters |
-| ---------- | ----------------------------------------------- | ---------- |
-| change     | Event triggered by clicking on tag              |            |
-| close      | Event triggered by clicking the tag delete icon |            |
+### 元素事件
+
+| 事件名称 | 说明                       | 回调参数 |
+| -------- | -------------------------- | -------- |
+| change   | 点击标签触发的事件         |          |
+| close    | 点击标签删除图标触发的事件 |          |

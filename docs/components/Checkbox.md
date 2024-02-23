@@ -1,6 +1,6 @@
 ## Checkbox
 
-### 基础用法
+### Basic checkbox
 
 <ClientOnly>
 <vp-checkbox></vp-checkbox>
@@ -13,9 +13,9 @@
 </canvas>
 ```
 
-### 禁用状态
+### Disabled
 
-> 给checkbox元素传入`disabled`属性控制其是否禁用
+> Pass the `disabled` attribute to the checkbox element to control whether it is disabled
 
 <ClientOnly>
 <vp-checkbox-disabled></vp-checkbox-disabled>
@@ -29,7 +29,7 @@
 
 ### indeterminate
 
-> `indeterminate`属性用于表示checkbox的不确定状态，一般用于全选效果
+> The `indeterminate` attribute is used to indicate the uncertain state of the checkbox, generally used for the all-select effect.
 
 <ClientOnly>
 <vp-checkbox-indeterminate></vp-checkbox-indeterminate>
@@ -41,9 +41,9 @@
 </canvas>
 ```
 
-### 复现框组
+### Checkbox group
 
-> 使用内置的复选框组元素 `checkbox-group`可以将多个复选框组合在一起控制勾选
+> Use the built-in checkbox group element `checkbox-group` to group multiple checkboxes together to control checking.
 
 <ClientOnly>
 <vp-checkbox-group></vp-checkbox-group>
@@ -68,35 +68,35 @@ export default {
 </script>
 ```
 
-### 元素参数
+### Attributes
 
 #### checkbox
 
-| 参数          | 说明                    | 类型    | 可选值 | 默认值 |
-| ------------- | ----------------------- | ------- | ------ | ------ |
-| text          | 复选框说明文字          | string  |        |        |
-| fontSize      | 复选框文字大小          | number  |        |        |
-| checked       | 复选框是否勾选          | boolean |        | false  |
-| disabled      | 复选框是否禁用          | boolean |        | false  |
-| indeterminate | 设置 indeterminate 状态 | boolean |        | false  |
-| value         | 复选框值                | any     |        |        |
+| Attribute     | Description                      | Type    | Accepted values | Default                                                            |
+| ------------- | -------------------------------- | ------- | --------------- | ------------------------------------------------------------------ |
+| text          | Checkbox description text        | string  |                 |                                                                    |
+| fontSize      | Checkbox text fontsize           | number  |                 | The font size set by default for the canvas drawing context object |
+| checked       | Is the checkbox checked?         | boolean |                 | false                                                              |
+| disabled      | Whether the checkbox is disabled | boolean |                 | false                                                              |
+| indeterminate | Set indeterminate state          | boolean |                 | false                                                              |
+| value         | checkbox value                   | any     |                 |                                                                    |
 
 #### checkbox-group
 
-| 参数  | 说明       | 类型  | 可选值 | 默认值 |
-| ----- | ---------- | ----- | ------ | ------ |
-| value | 复选框组值 | Array |        | []     |
+| Attribute | Description          | Type  | Accepted values | Default |
+| --------- | -------------------- | ----- | --------------- | ------- |
+| value     | Checkbox group value | Array |                 | []      |
 
-### 元素事件
+### Events
 
 #### checkbox
 
-| 事件名称 | 说明                   | 回调参数                 |
-| -------- | ---------------------- | ------------------------ |
-| change   | 勾选复选框时触发的事件 | (value, checked) => void |
+| Event Name | Description                                | Parameters       |
+| ---------- | ------------------------------------------ | ---------------- |
+| change     | Event triggered when a checkbox is checked | (value, checked) |
 
 #### checkbox-group
 
-| 事件名称 | 说明                             | 回调参数        |
-| -------- | -------------------------------- | --------------- |
-| change   | 复选框组的值发生变化时触发的事件 | (value) => void |
+| Event Name | Description                                                | Parameters |
+| ---------- | ---------------------------------------------------------- | ---------- |
+| change     | Event triggered when the value of a checkbox group changes | (value)    |

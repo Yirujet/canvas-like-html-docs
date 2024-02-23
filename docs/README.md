@@ -2,15 +2,15 @@
 home: true
 heroImage: /canvas-line-html.png
 heroText: Canvas Like Html
-tagline: 像使用html一样绘制canvas
-actionText: 快速上手 →
+tagline: Make canvas drawing as convenient as using html elements
+actionText: Get Started →
 actionLink: /guide/use
 features:
-- title: 快捷绘制
-  details: 内置多个绘图元素，摆脱传统的调用api方式绘制canvas。
-- title: 响应式
-  details: 动态数据绑定，自定义元素事件。
-- title: 脱离前端框架且高扩展
-  details: 兼容所有前端框架并且可自定义绘图元素。
+- title: Easy to draw
+  details: Built-in multiple drawing elements, getting rid of the traditional way of calling API to draw canvas.
+- title: Responsive
+  details: Dynamic data binding, custom element events.
+- title: Out of the front-end framework and highly scalable
+  details: Compatible with all front-end frameworks and customizable drawing elements.
 footer: MIT Licensed | Copyright © 2024-present Yirujet
 ---

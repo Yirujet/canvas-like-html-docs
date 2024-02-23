@@ -1,6 +1,6 @@
 ## Span
 
-### Basic span
+### 静态文本
 
 <ClientOnly>
 <vp-span></vp-span>
@@ -16,10 +16,10 @@
 </canvas>
 ```
 
-### Attributes
+### 元素参数
 
-| Attribute | Description   | Type   | Accepted values | Default |
-| --------- | ------------- | ------ | --------------- | ------- |
-| text      | show text     | string |                 | '文本'  |
-| color     | text color    | string |                 | '#000'  |
-| fontSize  | text fontsize | number |                 | 12      |
+| 参数     | 说明     | 类型   | 可选值 | 默认值 |
+| -------- | -------- | ------ | ------ | ------ |
+| text     | 显示文字 | string |        | '文本' |
+| color    | 文字颜色 | string |        | '#000' |
+| fontSize | 文字大小 | number |        | 12     |

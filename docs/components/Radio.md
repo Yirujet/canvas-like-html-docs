@@ -1,6 +1,6 @@
 ## Radio
 
-### 基础用法
+### Basic radio
 
 <ClientOnly>
 <vp-radio></vp-radio>
@@ -13,9 +13,9 @@
 </canvas>
 ```
 
-### 禁用状态
+### Disabled
 
-> 给radio元素传入 `disabled`属性控制其是否禁用
+> Pass the `disabled` attribute to the radio element to control whether it is disabled
 
 <ClientOnly>
 <vp-radio-disabled></vp-radio-disabled>
@@ -27,9 +27,9 @@
 </canvas>
 ```
 
-### 单选框组
+### Radio group
 
-> 使用内置的单选框组元素 `radio-group`可以将多个单选框组合在一起控制选择
+> Multiple radio buttons can be grouped together to control selection using the built-in radio button group element `radio-group`
 
 <ClientOnly>
 <vp-radio-group></vp-radio-group>
@@ -54,32 +54,32 @@ export default {
 </script>
 ```
 
-### 元素参数
+### Attributes
 
 #### radio
 
-| 参数     | 说明           | 类型    | 可选值 | 默认值 |
-| -------- | -------------- | ------- | ------ | ------ |
-| text     | 单选框说明文字 | string  |        |        |
-| fontSize | 单选框文字大小 | number  |        |        |
-| checked  | 单选框是否勾选 | boolean |        | false  |
-| disabled | 单选框是否禁用 | boolean |        | false  |
-| value    | 单选框值       | any     |        |        |
+| Attribute | Description                          | Type    | Accepted values | Default |
+| --------- | ------------------------------------ | ------- | --------------- | ------- |
+| text      | radio button description text        | string  |                 |         |
+| fontSize  | radio button text size               | number  |                 |         |
+| checked   | Is the radio button checked?         | boolean |                 | false   |
+| disabled  | Whether the radio button is disabled | boolean |                 | false   |
+| value     | radio button value                   | any     |                 |         |
 
-| 参数  | 说明       | 类型  | 可选值 | 默认值 |
-| ----- | ---------- | ----- | ------ | ------ |
-| value | 单选框组值 | Array |        | []     |
+| Attribute | Description       | Type  | Accepted values | Default |
+| --------- | ----------------- | ----- | --------------- | ------- |
+| value     | radio-group value | Array |                 | []      |
 
-### 元素事件
+### Events
 
 #### radio
 
-| 事件名称 | 说明                 | 回调参数        |
-| -------- | -------------------- | --------------- |
-| change   | 选择选项时触发的事件 | (value) => void |
+| Event Name | Description                                | Parameters |
+| ---------- | ------------------------------------------ | ---------- |
+| change     | Event triggered when an option is selected | (value)    |
 
 #### radio-group
 
-| 事件名称 | 说明                             | 回调参数        |
-| -------- | -------------------------------- | --------------- |
-| change   | 单选框组的值发生变化时触发的事件 | (value) => void |
+| Event Name | Description                                               | Parameters |
+| ---------- | --------------------------------------------------------- | ---------- |
+| change     | Event triggered when the value of the radio-group changes | (value)    |

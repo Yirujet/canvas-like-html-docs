@@ -1,14 +1,14 @@
 ## Button
 
-### Basic button
+### 基础按钮
 
 <ClientOnly>
 <vp-button></vp-button>
 </ClientOnly>
 
-### Usage
+### 使用
 
-> Create a `.canvas` file and write the file content
+> 创建.canvas文件，编写文件内容
 
 ```canvas
 <canvas width="800" height="180">
@@ -34,9 +34,9 @@
 
 ```
 
-### Disabled
+### 禁用状态
 
-> Pass the `disabled` attribute to the button element to control whether it is available
+> 给按钮元素传入`disabled`属性来控制其是否可用
 
 <ClientOnly>
 <vp-button-disabled></vp-button-disabled>
@@ -65,9 +65,9 @@
 </canvas>
 ```
 
-### text button
+### 文字按钮
 
-> Buttons without borders and backgrounds
+> 没有边框跟背景的按钮
 
 <ClientOnly>
 <vp-text-button></vp-text-button>
@@ -80,9 +80,9 @@
 </canvas>
 ```
 
-### Event
+### 事件
 
-> Support click events
+> 支持监听click事件
 
 <ClientOnly>
 <vp-button-event></vp-button-event>
@@ -104,20 +104,20 @@
 </script>
 ```
 
-### Attributes
+### 元素参数
 
-| Attribute | Description                                | Type             | Accepted values                                                              | Default                                                                  |
-| :-------- | ------------------------------------------ | ---------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| text      | button text                                | string           |                                                                              | 按钮                                                                     |
-| color     | Button text color                          | string           |                                                                              | The font fill color set by default for the canvas drawing context object |
-| fontSize  | Button text fontsize                       | string\| number |                                                                              | The font size set by default for the canvas drawing context object       |
-| type      | Button type                                | string           | default\| primary \| success \| info \| warning \| danger \| text | default                                                                  |
-| plain     | Whether the button is plain                | boolean          |                                                                              | false                                                                    |
-| round     | Whether to round the corners of the button | boolean          |                                                                              | false                                                                    |
-| disabled  | Whether the button is disabled             | boolean          |                                                                              | false                                                                    |
+| 参数     | 说明         | 类型             | 可选值                                                                       | 默认值                                     |
+| :------- | ------------ | ---------------- | ---------------------------------------------------------------------------- | ------------------------------------------ |
+| text     | 按钮文字     | string           |                                                                              | 按钮                                       |
+| color    | 按钮文字颜色 | string           |                                                                              | canvas绘制上下文对象默认设置的字体填充颜色 |
+| fontSize | 按钮文字大小 | string\| number |                                                                              | canvas绘制上下文对象默认设置的字体大小     |
+| type     | 类型         | string           | default\| primary \| success \| info \| warning \| danger \| text | default                                    |
+| plain    | 是否朴素按钮 | boolean          |                                                                              | false                                      |
+| round    | 是否圆角按钮 | boolean          |                                                                              | false                                      |
+| disabled | 是否禁用     | boolean          |                                                                              | false                                      |
 
-### Events
+### 元素事件
 
-| Event Name | Description                     | Parameters |
-| ---------- | ------------------------------- | ---------- |
-| click      | Event triggered by button click |            |
+| 事件名称 | 说明               | 回调参数 |
+| -------- | ------------------ | -------- |
+| click    | 点击按钮触发的事件 |          |
