@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Grid | Canvas like html</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <script src="/canvas-like-html-docs/index.js"></script>
+    <link rel="stylesheet" href="/canvas-like-html-docs/index.css">
+    <meta name="description" content="Make canvas drawing as convenient as using html elements">
+    
+    <link rel="preload" href="/canvas-like-html-docs/assets/css/0.styles.dc70029b.css" as="style"><link rel="preload" href="/canvas-like-html-docs/assets/js/app.ecbf0d01.js" as="script"><link rel="preload" href="/canvas-like-html-docs/assets/js/2.944056a7.js" as="script"><link rel="preload" href="/canvas-like-html-docs/assets/js/1.b1aeb979.js" as="script"><link rel="preload" href="/canvas-like-html-docs/assets/js/74.7e97f47d.js" as="script"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/10.8a7768ce.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/100.8c6f029c.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/101.bb1fa49e.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/102.572e57ff.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/103.0b581924.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/104.fe16e550.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/105.8c39d7e0.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/106.31c6ac82.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/107.829c96b1.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/108.d9d27ba5.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/109.58077f77.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/11.9cc963d6.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/12.93ee3784.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/13.765120fd.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/14.c5bfe1c5.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/15.9eda8261.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/16.2cd908c0.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/17.43963c49.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/18.f0cb8969.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/19.85ee8966.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/20.dba1c568.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/21.d7185174.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/22.bb186508.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/23.6982cd54.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/24.e77b8249.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/25.ba56d0d4.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/26.283f6536.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/27.fe80b4f9.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/28.24868362.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/29.e3a741f6.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/3.8b501b9b.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/30.08545934.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/31.d2824190.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/32.a9d792ca.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/33.9ca133df.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/34.2b7a94d5.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/35.b4c052ab.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/36.5c414561.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/37.9d77aecf.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/38.1e2e1927.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/39.151bb8d0.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/4.a7cb3d6c.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/40.f48cb909.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/41.66e83c4d.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/42.76264f66.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/43.5512a81e.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/44.de3ed165.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/45.dd945d1e.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/46.e86edf37.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/47.6e0fecec.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/48.589adbb7.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/49.fa5582cb.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/5.38bf8baf.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/50.b6d3a8aa.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/51.15d022a3.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/52.fb080c20.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/53.a37f1dd5.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/54.902b0c21.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/55.737009a9.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/56.e2e6aeda.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/57.abea400d.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/58.1ef28df9.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/59.198954aa.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/6.fb371b7a.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/60.58191b68.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/61.fb55cdce.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/62.8670cb0b.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/63.6824e703.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/64.7d122446.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/65.120aaae4.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/66.f3af2302.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/67.a17ababb.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/68.f1fc550f.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/69.88d6ee42.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/7.627caa28.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/70.37397559.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/71.4034f6da.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/72.8b881aca.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/73.086e7d29.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/75.a871611b.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/76.7bdc78e5.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/77.c8cdd614.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/78.75b34bc5.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/79.8d0eb388.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/80.c0a2fbf6.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/81.99aa2290.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/82.9b9a37df.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/83.37077407.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/84.3aa8bce8.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/85.a092086d.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/86.7db32ece.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/87.45b907e2.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/88.51bd54e2.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/89.16beeb4d.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/90.59245473.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/91.5b13a7ff.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/92.3ba99c9a.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/93.44dd904b.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/94.d7648f85.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/95.f0c55e74.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/96.cc8d669a.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/97.99c96419.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/98.c15d3b17.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/99.320acb83.js"><link rel="prefetch" href="/canvas-like-html-docs/assets/js/vendors~docsearch.5e19b665.js">
+    <link rel="stylesheet" href="/canvas-like-html-docs/assets/css/0.styles.dc70029b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/canvas-like-html-docs/" class="home-link router-link-active"><!----> <span class="site-name">Canvas like html</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/canvas-like-html-docs/components/Grid.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/canvas-like-html-docs/zh/components/Grid.html" class="nav-link">
+  简体中文
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/canvas-like-html-docs/components/Grid.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/canvas-like-html-docs/zh/components/Grid.html" class="nav-link">
+  简体中文
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/canvas-like-html-docs/guide/install.html" class="sidebar-link">Install</a></li><li><a href="/canvas-like-html-docs/guide/use.html" class="sidebar-link">Get started quickly</a></li><li><a href="/canvas-like-html-docs/guide/canvas_sfc.html" class="sidebar-link">.canvas file</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Elements</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/canvas-like-html-docs/components/Span.html" class="sidebar-link">Span</a></li><li><a href="/canvas-like-html-docs/components/Button.html" class="sidebar-link">Button</a></li><li><a href="/canvas-like-html-docs/components/Link.html" class="sidebar-link">Link</a></li><li><a href="/canvas-like-html-docs/components/Tag.html" class="sidebar-link">Tag</a></li><li><a href="/canvas-like-html-docs/components/Checkbox.html" class="sidebar-link">Checkbox</a></li><li><a href="/canvas-like-html-docs/components/Radio.html" class="sidebar-link">Radio</a></li><li><a href="/canvas-like-html-docs/components/Progress.html" class="sidebar-link">Progress</a></li><li><a href="/canvas-like-html-docs/components/Switch.html" class="sidebar-link">Switch</a></li><li><a href="/canvas-like-html-docs/components/Dropdown.html" class="sidebar-link">Dropdown</a></li><li><a href="/canvas-like-html-docs/components/Input.html" class="sidebar-link">Input</a></li><li><a href="/canvas-like-html-docs/components/Table.html" class="sidebar-link">Table</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Layout</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/canvas-like-html-docs/components/Grid.html" aria-current="page" class="active sidebar-link">Grid</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Directives</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/canvas-like-html-docs/directives/for.html" class="sidebar-link">*for</a></li><li><a href="/canvas-like-html-docs/directives/insertVal.html" class="sidebar-link">interpolation expression</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Other</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/canvas-like-html-docs/other/Element.html" class="sidebar-link">Element</a></li><li><a href="/canvas-like-html-docs/other/CustomElement.html" class="sidebar-link">Custom drawing elements</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="grid"><a href="#grid" class="header-anchor">#</a> Grid</h2> <h3 id="background"><a href="#background" class="header-anchor">#</a> background</h3> <p>As we all know, canvas is drawn at the pixel level. Unlike HTML, it does not automatically display its internal block-level elements in one line, and displays the in-line elements in sequence on the same line. If you want to achieve block-level and inline effects similar to HTML on canvas, developers need to manually calculate the horizontal and vertical coordinates of drawing graphics, which is really troublesome. However, this bad situation will be completely solved in canvas-like-html, that is, using the library's built-in row and col elements to implement grid layout in canvas.</p> <h3 id="overview"><a href="#overview" class="header-anchor">#</a> Overview</h3> <p>The grid layout will not be described in detail here. Here is a brief description of the working principle of implementing grid in canvas-like-html:</p> <ul><li>Create a row element through the <code>row</code> element</li> <li>Add the <code>col</code> element inside the <code>row</code> element to achieve multi-column arrangement</li> <li>Each column element <code>col</code> can pass in the <code>span</code> attribute to control the width it occupies in the row element.</li> <li>The span of the column element col only accepts values from <code>1~24</code>, that is, a row element can be divided into up to 24 columns.</li> <li>All elements in the column element col (except row, which occupies an exclusive row) will be arranged one by one like the inline elements in HTML. If they exceed the row, they will be arranged in a row.</li></ul> <h3 id="basic-grid-usage"><a href="#basic-grid-usage" class="header-anchor">#</a> Basic grid usage</h3> <!----> <div class="language-canvas extra-class"><pre class="language-text"><code>&lt;canvas width=&quot;800&quot; height=&quot;50&quot;&gt;
+	&lt;row&gt;
+		&lt;col :span=&quot;6&quot;&gt;&lt;span&gt;col-6&lt;/span&gt;&lt;/col&gt;
+		&lt;col :span=&quot;6&quot;&gt;&lt;span&gt;col-6&lt;/span&gt;&lt;/col&gt;
+		&lt;col :span=&quot;6&quot;&gt;&lt;span&gt;col-6&lt;/span&gt;&lt;/col&gt;
+		&lt;col :span=&quot;6&quot;&gt;&lt;span&gt;col-6&lt;/span&gt;&lt;/col&gt;
+	&lt;/row&gt;
+&lt;/canvas&gt;
+</code></pre></div><h3 id="vertical-alignment"><a href="#vertical-alignment" class="header-anchor">#</a> vertical alignment</h3> <blockquote><p>By setting the <code>align</code> attribute of the row element, all column elements under the row element can be vertically aligned.</p></blockquote> <!----> <div class="language-canvas extra-class"><pre class="language-text"><code>&lt;canvas width=&quot;800&quot; height=&quot;200&quot;&gt;
+	&lt;row&gt;
+		&lt;col :span=&quot;24&quot;&gt;
+			&lt;row&gt;
+				&lt;col :span=&quot;24&quot;&gt;
+					&lt;span&gt;align: top&lt;/span&gt;
+				&lt;/col&gt;
+			&lt;/row&gt;
+			&lt;row align=&quot;top&quot;&gt;
+				&lt;col :span=&quot;12&quot;&gt;&lt;button&gt;col-12&lt;/button&gt;&lt;/col&gt;
+				&lt;col :span=&quot;12&quot;&gt;&lt;span&gt;col-12&lt;/span&gt;&lt;/col&gt;
+			&lt;/row&gt;
+			&lt;row&gt;
+				&lt;col :span=&quot;24&quot;&gt;
+					&lt;span&gt;align: middle&lt;/span&gt;
+				&lt;/col&gt;
+			&lt;/row&gt;
+			&lt;row align=&quot;middle&quot;&gt;
+				&lt;col :span=&quot;12&quot;&gt;&lt;button&gt;col-12&lt;/button&gt;&lt;/col&gt;
+				&lt;col :span=&quot;12&quot;&gt;&lt;span&gt;col-12&lt;/span&gt;&lt;/col&gt;
+			&lt;/row&gt;
+			&lt;row&gt;
+				&lt;col :span=&quot;24&quot;&gt;
+					&lt;span&gt;align: bottom&lt;/span&gt;
+				&lt;/col&gt;
+			&lt;/row&gt;
+			&lt;row align=&quot;bottom&quot;&gt;
+				&lt;col :span=&quot;12&quot;&gt;&lt;button&gt;col-12&lt;/button&gt;&lt;/col&gt;
+				&lt;col :span=&quot;12&quot;&gt;&lt;button&gt;col-12&lt;/button&gt;&lt;/col&gt;
+			&lt;/row&gt;
+		&lt;/col&gt;
+	&lt;/row&gt;
+&lt;/canvas&gt;
+</code></pre></div><h3 id="horizontal-arrangement"><a href="#horizontal-arrangement" class="header-anchor">#</a> horizontal arrangement</h3> <blockquote><p>By setting the <code>justify</code> attribute of the row element, all column elements under the row element can be arranged horizontally.</p></blockquote> <!----> <div class="language-canvas extra-class"><pre class="language-text"><code>&lt;canvas width=&quot;800&quot; height=&quot;350&quot;&gt;
+	&lt;row&gt;
+		&lt;col :span=&quot;24&quot;&gt;
+			&lt;row&gt;
+				&lt;col :span=&quot;24&quot;&gt;
+					&lt;span&gt;justify: start&lt;/span&gt;
+				&lt;/col&gt;
+			&lt;/row&gt;
+			&lt;row justify=&quot;start&quot;&gt;
+				&lt;col :span=&quot;2&quot;&gt;&lt;button type=&quot;primary&quot;&gt;col-2&lt;/button&gt;&lt;/col&gt;
+				&lt;col :span=&quot;2&quot;&gt;&lt;button type=&quot;primary&quot;&gt;col-2&lt;/button&gt;&lt;/col&gt;
+				&lt;col :span=&quot;2&quot;&gt;&lt;button type=&quot;primary&quot;&gt;col-2&lt;/button&gt;&lt;/col&gt;
+			&lt;/row&gt;
+			&lt;row&gt;
+				&lt;col :span=&quot;24&quot;&gt;
+					&lt;span&gt;justify: start&lt;/span&gt;
+				&lt;/col&gt;
+			&lt;/row&gt;
+			&lt;row justify=&quot;start&quot;&gt;
+				&lt;col :span=&quot;2&quot;&gt;&lt;button type=&quot;primary&quot;&gt;col-2&lt;/button&gt;&lt;/col&gt;
+				&lt;col :span=&quot;2&quot;&gt;&lt;button type=&quot;primary&quot;&gt;col-2&lt;/button&gt;&lt;/col&gt;
+				&lt;col :span=&quot;2&quot;&gt;&lt;button type=&quot;primary&quot;&gt;col-2&lt;/button&gt;&lt;/col&gt;
+			&lt;/row&gt;
+			&lt;row&gt;
+				&lt;col :span=&quot;24&quot;&gt;
+					&lt;span&gt;justify: start&lt;/span&gt;
+				&lt;/col&gt;
+			&lt;/row&gt;
+			&lt;row justify=&quot;start&quot;&gt;
+				&lt;col :span=&quot;2&quot;&gt;&lt;button type=&quot;primary&quot;&gt;col-2&lt;/button&gt;&lt;/col&gt;
+				&lt;col :span=&quot;2&quot;&gt;&lt;button type=&quot;primary&quot;&gt;col-2&lt;/button&gt;&lt;/col&gt;
+				&lt;col :span=&quot;2&quot;&gt;&lt;button type=&quot;primary&quot;&gt;col-2&lt;/button&gt;&lt;/col&gt;
+			&lt;/row&gt;
+			&lt;row&gt;
+				&lt;col :span=&quot;24&quot;&gt;
+					&lt;span&gt;justify: start&lt;/span&gt;
+				&lt;/col&gt;
+			&lt;/row&gt;
+			&lt;row justify=&quot;start&quot;&gt;
+				&lt;col :span=&quot;2&quot;&gt;&lt;button type=&quot;primary&quot;&gt;col-2&lt;/button&gt;&lt;/col&gt;
+				&lt;col :span=&quot;2&quot;&gt;&lt;button type=&quot;primary&quot;&gt;col-2&lt;/button&gt;&lt;/col&gt;
+				&lt;col :span=&quot;2&quot;&gt;&lt;button type=&quot;primary&quot;&gt;col-2&lt;/button&gt;&lt;/col&gt;
+			&lt;/row&gt;
+			&lt;row&gt;
+				&lt;col :span=&quot;24&quot;&gt;
+					&lt;span&gt;justify: start&lt;/span&gt;
+				&lt;/col&gt;
+			&lt;/row&gt;
+			&lt;row justify=&quot;start&quot;&gt;
+				&lt;col :span=&quot;2&quot;&gt;&lt;button type=&quot;primary&quot;&gt;col-2&lt;/button&gt;&lt;/col&gt;
+				&lt;col :span=&quot;2&quot;&gt;&lt;button type=&quot;primary&quot;&gt;col-2&lt;/button&gt;&lt;/col&gt;
+				&lt;col :span=&quot;2&quot;&gt;&lt;button type=&quot;primary&quot;&gt;col-2&lt;/button&gt;&lt;/col&gt;
+			&lt;/row&gt;
+			&lt;row&gt;
+				&lt;col :span=&quot;24&quot;&gt;
+					&lt;span&gt;justify: start&lt;/span&gt;
+				&lt;/col&gt;
+			&lt;/row&gt;
+			&lt;row justify=&quot;start&quot;&gt;
+				&lt;col :span=&quot;2&quot;&gt;&lt;button type=&quot;primary&quot;&gt;col-2&lt;/button&gt;&lt;/col&gt;
+				&lt;col :span=&quot;2&quot;&gt;&lt;button type=&quot;primary&quot;&gt;col-2&lt;/button&gt;&lt;/col&gt;
+				&lt;col :span=&quot;2&quot;&gt;&lt;button type=&quot;primary&quot;&gt;col-2&lt;/button&gt;&lt;/col&gt;
+			&lt;/row&gt;
+		&lt;/col&gt;
+	&lt;/row&gt;
+&lt;/canvas&gt;
+</code></pre></div><h3 id="offset"><a href="#offset" class="header-anchor">#</a> offset</h3> <blockquote><p>Column offset can be achieved by setting the <code>offset</code> of the column element.</p></blockquote> <!----> <div class="language-canvas extra-class"><pre class="language-text"><code>&lt;canvas width=&quot;800&quot; height=&quot;50&quot;&gt;
+	&lt;row&gt;
+		&lt;col :span=&quot;24&quot;&gt;
+			&lt;row&gt;
+				&lt;col :span=&quot;6&quot; :offset=&quot;6&quot;&gt;&lt;span&gt;col-6 col-offset-6&lt;/span&gt;&lt;/col&gt;
+				&lt;col :span=&quot;6&quot; :offset=&quot;6&quot;&gt;&lt;span&gt;col-6 col-offset-6&lt;/span&gt;&lt;/col&gt;
+			&lt;/row&gt;
+			&lt;row&gt;
+				&lt;col :span=&quot;12&quot; :offset=&quot;6&quot;&gt;&lt;span&gt;col-12 col-offset-6&lt;/span&gt;&lt;/col&gt;
+			&lt;/row&gt;
+		&lt;/col&gt;
+	&lt;/row&gt;
+&lt;/canvas&gt;
+
+</code></pre></div><h3 id="pull、push"><a href="#pull、push" class="header-anchor">#</a> pull、push</h3> <blockquote><p>By setting the <code>pull</code> and <code>push</code> of the col element, you can control the position of the column left and right.</p> <p>Note: <code>pull</code> and <code>push</code> only change the position of the current column element and will not affect subsequent columns. The effect is similar to the position: absolute element setting left and right in CSS.</p></blockquote> <!----> <div class="language-canvas extra-class"><pre class="language-text"><code>&lt;canvas width=&quot;800&quot; height=&quot;100&quot;&gt;
+	&lt;row&gt;
+		&lt;col :span=&quot;24&quot;&gt;
+			&lt;row&gt;
+				&lt;col :span=&quot;6&quot; :push=&quot;2&quot;&gt;&lt;span&gt;col-6 push-2&lt;/span&gt;&lt;/col&gt;
+				&lt;col :span=&quot;6&quot; :push=&quot;3&quot;&gt;&lt;span&gt;col-6 push-3&lt;/span&gt;&lt;/col&gt;
+			&lt;/row&gt;
+			&lt;row justify=&quot;end&quot;&gt;
+				&lt;col :span=&quot;6&quot; :pull=&quot;2&quot;&gt;&lt;span&gt;col-6 pull-2&lt;/span&gt;&lt;/col&gt;
+				&lt;col :span=&quot;6&quot; :pull=&quot;2&quot;&gt;&lt;span&gt;col-6 pull-2&lt;/span&gt;&lt;/col&gt;
+			&lt;/row&gt;
+			&lt;row justify=&quot;center&quot;&gt;
+				&lt;col :span=&quot;18&quot; :push=&quot;6&quot;&gt;&lt;span&gt;col-18 push-6&lt;/span&gt;&lt;/col&gt;
+				&lt;col :span=&quot;6&quot; :pull=&quot;4&quot;&gt;&lt;span&gt;col-6 pull-4&lt;/span&gt;&lt;/col&gt;
+			&lt;/row&gt;
+		&lt;/col&gt;
+	&lt;/row&gt;
+&lt;/canvas&gt;
+</code></pre></div><h3 id="gutter"><a href="#gutter" class="header-anchor">#</a> gutter</h3> <blockquote><p>By setting the <code>gutter</code> of the <code>row</code> element, you can set a gap for its direct child <code>col</code> elements.</p> <p>Note: The moving distance is in pixels</p></blockquote> <!----> <div class="language-canvas extra-class"><pre class="language-text"><code>&lt;canvas width=&quot;800&quot; height=&quot;50&quot;&gt;
+	&lt;row :gutter=&quot;5&quot; justify=&quot;center&quot;&gt;
+		&lt;col :span=&quot;2&quot;&gt;
+			&lt;tag type=&quot;success&quot;&gt;col-2&lt;/tag&gt;
+		&lt;/col&gt;
+		&lt;col :span=&quot;2&quot;&gt;
+			&lt;tag type=&quot;success&quot;&gt;col-2&lt;/tag&gt;
+		&lt;/col&gt;
+		&lt;col :span=&quot;2&quot;&gt;
+			&lt;tag type=&quot;success&quot;&gt;col-2&lt;/tag&gt;
+		&lt;/col&gt;
+		&lt;col :span=&quot;2&quot;&gt;
+			&lt;tag type=&quot;success&quot;&gt;col-2&lt;/tag&gt;
+		&lt;/col&gt;
+	&lt;/row&gt;
+&lt;/canvas&gt;
+
+</code></pre></div><h3 id="attributes"><a href="#attributes" class="header-anchor">#</a> Attributes</h3> <h4 id="row"><a href="#row" class="header-anchor">#</a> row</h4> <table><thead><tr><th>Attribute</th> <th>Description</th> <th>Type</th> <th>Accepted values</th> <th>Default</th></tr></thead> <tbody><tr><td>align</td> <td>vertical alignment</td> <td>string</td> <td>top| middle | bottom</td> <td>top</td></tr> <tr><td>justify</td> <td>horizontal arrangement</td> <td>string</td> <td>start| center | end | space-around | space-between | space-evenly</td> <td>start</td></tr> <tr><td>gutter</td> <td>spacing</td> <td>number</td> <td></td> <td>0</td></tr> <tr><td>type</td> <td>Layout method, currently only supports flex</td> <td>string</td> <td>flex</td> <td>flex</td></tr></tbody></table> <h4 id="col"><a href="#col" class="header-anchor">#</a> col</h4> <table><thead><tr><th>Attribute</th> <th>Description</th> <th>Type</th> <th>Accepted values</th> <th>Default</th></tr></thead> <tbody><tr><td>span</td> <td>The number of cells occupied by the grid</td> <td>number</td> <td>1-24</td> <td>24</td></tr> <tr><td>offset</td> <td>The number of spacer cells on the left side of the grid</td> <td>number</td> <td></td> <td>0</td></tr> <tr><td>push</td> <td>The number of cells the grid moves to the left</td> <td>number</td> <td></td> <td>0</td></tr> <tr><td>pull</td> <td>The number of cells the grid moves to the right</td> <td>number</td> <td></td> <td>0</td></tr></tbody></table></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/canvas-like-html-docs/components/Table.html" class="prev">
+        Table
+      </a></span> <span class="next"><a href="/canvas-like-html-docs/directives/for.html">
+        *for
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/canvas-like-html-docs/assets/js/app.ecbf0d01.js" defer></script><script src="/canvas-like-html-docs/assets/js/2.944056a7.js" defer></script><script src="/canvas-like-html-docs/assets/js/1.b1aeb979.js" defer></script><script src="/canvas-like-html-docs/assets/js/74.7e97f47d.js" defer></script>
+  </body>
+</html>

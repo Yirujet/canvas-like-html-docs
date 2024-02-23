@@ -1,0 +1,15 @@
+table {
+    width: 100%;
+}
+
+table thead {
+    width: 100%;
+}
+
+table thead th, td {
+    width: 200px;
+}
+
+table tbody {
+    width: 100%;
+}
